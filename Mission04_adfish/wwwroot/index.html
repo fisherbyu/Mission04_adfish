@@ -4,10 +4,14 @@
 <head>
     <meta charset="utf-8" />
     <title>Mission 4 Page</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/core.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/among_us.png">
+
 </head>
 <body>
     <h1>Andrew Fisher</h1>
-    <img src="img/moab22.JPEG" style="width: 100px" />
+    <img src="img/moab22.JPEG" style="width: 300px" />
     <p>
         In this class, I'm excited to learn more about web development more generally but also specifically C#.  I have heard the ASP .NET CORE Framework is great for creating applications that exist on the web and mobile, which seems awesome.  Also, I am excited to be learning more about a Strongly Typed Language, which I think will be really good for my career.
     </p>
@@ -17,6 +21,32 @@
         <li>Full-Stack Web Developer</li>
         <li>Product Manager</li>
     </ul>
+    <form>
+        
+        <label for="assignments_Input">Assignments Grade Percent (50% Weight)</label>
+        <input name="assignments_Input" id="assignments_Input" type="number" />
+        <br />
+        <label for="gp_Input">Group Project Grade Percent (10% Weight)</label>
+        <input name="gp_Input" type="number" id="gp_Input" />
+        <br />
+        <label for="quiz_Input">Quiz Grade Percent (10% Weight)</label>
+        <input name="quiz_Input" type="number" id="quiz_Input" />
+        <br />
+        <label for="midterm_Input">Midterm Grade Percent (10% Weight)</label>
+        <input name="midterm_Input" type="number" id="midterm_Input" />
+        <br />
+        <label for="final_Input">Final Grade Percent (10% Weight)</label>
+        <input name="final_Input" type="number" id="final_Input" />
+        <br />
+        <label for="intex_Input">INTEXGrade Percent (10% Weight)</label>
+        <input name="intex_Input" type="number" id="intex_Input" />
+        <br />
 
+        <button id="calc_grade_submit" type="button"> Check Grade</button>
+    </form>
+    <h2 id="output"></h2>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="js/core.js"></script>
 </body>
 </html>
