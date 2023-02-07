@@ -26,7 +26,7 @@ namespace Mission04_adfish
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseDefaultFiles();
+            app.UseStaticFiles();
             app.UseRouting();
             app.UseEndpoints(endpoints => {
                 endpoints.MapControllerRoute(

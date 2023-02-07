@@ -12,5 +12,9 @@ namespace Mission04_adfish.Controllers
         {
             return View();
         }
+        public IActionResult GradeCalc()
+        {
+            return View();
+        }
     }
 }
